@@ -1,0 +1,76 @@
+body {
+  background: orange;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  height: 100%;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 4% auto;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 2.6em;
+  text-transform: uppercase;
+}
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  font-size: 6em;
+  margin: 50px 0;
+}
+.hours,
+.seconds,
+.tens {
+  font-size: 1em;
+  width: 400px;
+  margin: 0 120px;
+}
+
+button {
+  background: grey;
+  color: white;
+  border: solid 5px white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 3em;
+  padding: 18px 10px;
+  width: 180px;
+  margin: 10px;
+  outline: none;
+  box-shadow: 5px 5px 10px black;
+}
+button:active {
+  box-shadow: none;
+  transform: scale(0.9);
+  background-color: rgb(86, 86, 86);
+}
+.disabled {
+  display: none;
+}
+.store {
+  background-color: grey;
+  color: white;
+  width: 30%;
+  height: 200px;
+  margin: 50px auto;
+  overflow-y: scroll;
+  box-shadow: 5px 5px 10px black;
+  border: solid 5px white;
+}
+.store > p:nth-child(n) {
+  background-color: black !important;
+}
+
+.store > p:nth-child(2n) {
+  color: black;
+  background-color: rgb(219, 219, 219) !important;
+}
